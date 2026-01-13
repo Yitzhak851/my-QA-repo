@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QA Demo WebApp</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>QA Demo WebApp</h1>
+
+    <!-- LOGIN SECTION -->
+    <section class="card" id="login-section">
+      <h2>Login</h2>
+
+      <label for="username">Username</label>
+      <input id="username" type="text" placeholder="e.g. admin"/>
+
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="e.g. 1234"/>
+
+      <button id="login-btn">Login</button>
+      <p id="login-msg" class="msg"></p>
+    </section>
+
+    <!-- DASHBOARD SECTION -->
+    <section class="card hidden" id="dashboard-section">
+      <h2>Dashboard</h2>
+      <p id="welcome-msg"></p>
+
+      <!-- SEARCH -->
+      <div class="row">
+        <input id="search-input" type="text" placeholder="Search... (try: radar)" />
+        <button id="search-btn">Search</button>
+      </div>
+      <ul id="search-results"></ul>
+
+      <!-- FORM -->
+      <h3>Create Ticket</h3>
+      <label for="title">Title</label>
+      <input id="title" type="text" placeholder="Ticket title"/>
+
+      <label for="desc">Description</label>
+      <textarea id="desc" rows="3" placeholder="Describe the issue..."></textarea>
+
+      <button id="submit-ticket-btn">Submit</button>
+      <p id="ticket-msg" class="msg"></p>
+
+      <button id="logout-btn" class="secondary">Logout</button>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
