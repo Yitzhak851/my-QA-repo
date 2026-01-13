@@ -1,1 +1,4 @@
-# ss
+# Requirements for the project
+pytest==8.3.2        # Testing framework
+selenium==4.23.1    # Browser automation
+webdriver-manager==4.0.2  # Auto-manage drivers
